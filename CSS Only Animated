@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class=" contairol">
+    <div class="Bubbles">
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:29;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:27;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:29;"></span>
+      <span style="--i:27;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:19;"></span>
+      <span style="--i:11;"></span>
+      <span style="--i:12;"></span>
+      <span style="--i:10;"></span>
+      <span style="--i:26;"></span>
+      <span style="--i:22;"></span>
+      <span style="--i:29;"></span>
+      <span style="--i:18;"></span>
+      <span style="--i:13;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:27;"></span>
+      <span style="--i:15;"></span>
+      <span style="--i:25;"></span>
+      <span style="--i:29;"></span>
+      <span style="--i:27;"></span>
+      <span style="--i:14;"></span>
+      <span style="--i:19;"></span>
+      
+      
+    </div>
+  </div>
+  
+</body>
+</html>
+
+<style>
+
+  *{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+   font-family: "poppins",sans-serif;
+
+
+} 
+body
+{
+  min-height: 100vh;
+background: #0c192c;
+}
+.contairol
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.Bubbles
+{
+  position: relative;
+  display: flex;
+}
+.Bubbles span
+{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  nav-down:0 40px ;
+  background: hsl(195, 100%, 60%);
+  margin: 0 4px;
+  border-radius: 50px;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px hsl(0, 100%, 50%), 0 0 100px hsl(0, 100%, 50%) ;
+  animation:  animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.Bubbles span:nth-child()
+{  
+  background: hsl(0, 100%, 50%);
+ box-shadow: 0 0 0 10px #dc4f4f44, 0 0 50px hsl(0, 100%, 50%), 0 0 100px hsl(0, 100%, 50%) ;
+ animation-duration: calc(125s / var(--i));
+}
+@keyframes animate
+{
+  0%
+
+{
+   transform:translateY(100vh) scale(0) ;
+}
+  100%
+{
+   transform:translateY(-10vh) scale(1) ;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
